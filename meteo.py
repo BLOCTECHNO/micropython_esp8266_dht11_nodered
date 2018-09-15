@@ -7,12 +7,9 @@ from umqtt.simple import MQTTClient
 #import in/out pin
 from machine import Pin
 
-# Received messages from subscriptions will be delivered to this callback
-#def sub_cb(topic, msg):
-#    print((topic, msg))
 
 def send(t,h):
-    server="192.168.43.170"
+    server="" #192.168.43.170 => put your ip adress to your broker 
     c = MQTTClient("umqtt_client", server)
     #c.set_callback(sub_cb)
     c.connect()
