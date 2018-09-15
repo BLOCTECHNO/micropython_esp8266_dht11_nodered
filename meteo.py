@@ -9,7 +9,7 @@ from machine import Pin
 
 
 def send(t,h):
-    server="" #192.168.43.170 => put your ip adress to your broker 
+    server="" #192.168.43.170 => put your ip adress to your broker in ""
     c = MQTTClient("umqtt_client", server)
     #c.set_callback(sub_cb)
     c.connect()
